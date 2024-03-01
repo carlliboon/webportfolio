@@ -23,7 +23,7 @@
         class="navbar navbar-expand-lg bg-body-tertiary pt-0 pb-0 position-sticky"
         id="top"
       >
-        <div class="container-fluid nav-bar-bg-color">
+        <div class="container-fluid nav-bar-bg-color p-3">
           <div class="d-flex align-items-start ms-3">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -115,7 +115,7 @@
         <div>
           <a
             href="#contact"
-            class="bg-primary text-light text-decoration-none border-none rounded-2 p-2"
+            class="ctc-btn text-light text-decoration-none border-none rounded-3 p-3"
             >Let's Connect!</a
           >
         </div>
@@ -211,7 +211,7 @@
               >
                 <div
                   class="progress-bar progress-bar-striped progress-bar-animated"
-                  style="width: 85%"
+                  style="width: 5%"
                 ></div>
               </div>
               <div
@@ -224,7 +224,7 @@
               >
                 <div
                   class="progress-bar progress-bar-striped progress-bar-animated"
-                  style="width: 70%"
+                  style="width: 5%"
                 ></div>
               </div>
               <div
@@ -237,7 +237,7 @@
               >
                 <div
                   class="progress-bar progress-bar-striped progress-bar-animated"
-                  style="width: 35%"
+                  style="width: 25%"
                 ></div>
               </div>
               <div
@@ -250,7 +250,7 @@
               >
                 <div
                   class="progress-bar progress-bar-striped progress-bar-animated"
-                  style="width: 50%"
+                  style="width: 30%"
                 ></div>
               </div>
             </div>
@@ -297,7 +297,7 @@
               <a
                 href="https://travel-list-jonas.netlify.app/"
                 target="_blank"
-                class="btn btn-primary"
+                class="btn ctc-btn"
                 >See the app</a
               >
             </div>
@@ -324,7 +324,7 @@
               <a
                 href="https://fast-react-pizza-menu.netlify.app/"
                 target="_blank"
-                class="btn btn-primary"
+                class="btn ctc-btn"
                 >See the app</a
               >
             </div>
@@ -352,7 +352,7 @@
               <a
                 href="https://classy-weather.netlify.app/"
                 target="_blank"
-                class="btn btn-primary"
+                class="btn ctc-btn"
                 >See the app</a
               >
             </div>
@@ -380,7 +380,7 @@
               <a
                 href="https://worldwise-jonas.netlify.app/"
                 target="_blank"
-                class="btn btn-primary"
+                class="btn ctc-btn"
                 >See the app</a
               >
             </div>
@@ -393,7 +393,7 @@
     <!-- Contact Section Start -->
     <section id="contact">
       <div class="row text-light pb-5">
-        <div class="col-lg-4 col-sm-12 pt-5 pb-5">
+        <div class="col-lg-4 col-sm-12 pt-5 pb-5 contact-container">
           <div class="contact-details">
             <span class="material-symbols-outlined"> location_on </span>
             <h4>Address</h4>
@@ -410,35 +410,42 @@
             <p>libooncarlmichael@gmail.com</p>
           </div>
         </div>
-        <div class="col-lg-8 col-sm-12">
-          <div class="send-message mb-2">
+        <div class="col-sm-12 col-lg-8">
+          <div class="row m-5">
             <h2>Send me a message</h2>
-            <div class="inputs">
-              <input class="input-box" type="text" placeholder="John Doe" />
-              <input
-                class="input-box"
-                type="email"
-                placeholder="your@gmail.com"
-              />
-              <textarea
-                class="input-box"
-                id="message"
-                name="message"
-                rows="4"
-                cols="50"
-                placeholder="Enter your message here..."
-              ></textarea>
-            </div>
+            <p>
+              Fill out the form below, and I'll get back to you as soon as
+              possible!
+            </p>
+            <input
+              class="input-box col-sm-12 col-lg-7"
+              type="text"
+              placeholder="John Doe"
+            />
+            <input
+              class="input-box col-sm-12 col-lg-7"
+              type="email"
+              placeholder="your@gmail.com"
+            />
+            <textarea
+              class="input-box col-sm-12 col-lg-7"
+              id="message"
+              name="message"
+              rows="4"
+              cols="50"
+              placeholder="Enter your message here..."
+            ></textarea>
           </div>
+
           <button
             type="button"
-            class="btn btn-primary btn-modal"
+            class="btn ctc-btn btn-modal"
             data-bs-toggle="modal"
             data-bs-target="#exampleModal"
           >
             Submit
           </button>
-          <!-- Modal Section -->
+
           <div class="modal text-dark" id="exampleModal" tabindex="-1">
             <div class="modal-dialog">
               <div class="modal-content">
@@ -463,9 +470,6 @@
                     data-bs-dismiss="modal"
                   >
                     Close
-                  </button>
-                  <button type="button" class="btn btn-primary">
-                    Save changes
                   </button>
                 </div>
               </div>
